@@ -1,0 +1,44 @@
+{
+  "name": "mutai-npm-lab",
+  "version": "0.1.0",
+  "description": "Mutai's NPM Test Lab",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mutaimwiti/mutai-npm-lab.git"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./Car": "./lib/Car/index.js",
+    "./Car/index": "./lib/Car/index.js",
+    "./Car/index.js": "./lib/Car/index.js",
+    "./Foo": "./lib/Foo/index.js",
+    "./Foo/index": "./lib/Foo/index.js",
+    "./Foo/index.js": "./lib/Foo/index.js",
+    "./Person": "./lib/Person/index.js",
+    "./Person/index": "./lib/Person/index.js",
+    "./Person/index.js": "./lib/Person/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "babel -d lib src/",
+    "prepublish": "yarn clean && yarn build"
+  },
+  "keywords": [
+    "lab",
+    "npm",
+    "package",
+    "mutaimwiti"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.20.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "rimraf": "^3.0.2"
+  }
+}
