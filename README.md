@@ -8,8 +8,8 @@ Testing npm on gitlab
 Install
 -------
 
-$ npm install mutai-npm-lab
+    $ npm install mutai-npm-lab
 
 or
 
-$ yarn add mutai-npm-lab
+    $ yarn add mutai-npm-lab
