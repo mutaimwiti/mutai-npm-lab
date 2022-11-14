@@ -16,7 +16,7 @@
   },
   "scripts": {
     "clean": "rimraf lib",
-    "build": "babel -d lib src/",
+    "build": "babel -d lib src/ --copy-files --no-copy-ignored",
     "prepublish": "yarn clean && yarn build"
   },
   "keywords": [
@@ -25,9 +25,6 @@
     "package",
     "mutaimwiti"
   ],
-  "dependencies": {
-    "@babel/runtime": "^7.20.1"
-  },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
     "@babel/core": "^7.20.2",
