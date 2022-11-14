@@ -10,14 +10,8 @@
   "exports": {
     ".": "./lib/index.js",
     "./Car": "./lib/Car/index.js",
-    "./Car/index": "./lib/Car/index.js",
-    "./Car/index.js": "./lib/Car/index.js",
     "./Foo": "./lib/Foo/index.js",
-    "./Foo/index": "./lib/Foo/index.js",
-    "./Foo/index.js": "./lib/Foo/index.js",
     "./Person": "./lib/Person/index.js",
-    "./Person/index": "./lib/Person/index.js",
-    "./Person/index.js": "./lib/Person/index.js",
     "./package.json": "./package.json"
   },
   "scripts": {
